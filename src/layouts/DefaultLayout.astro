@@ -11,6 +11,7 @@ const {
   url,
   image = '/social-preview-image.png',
   author = 'Mark Teekman',
+  icon = "/logo.png",
 } = Astro.props
 ---
 
@@ -21,7 +22,7 @@ const {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- favicon -->
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="icon" type="image/svg+xml" href={ icon } />
 
     <SiteMeta
       title={title}
